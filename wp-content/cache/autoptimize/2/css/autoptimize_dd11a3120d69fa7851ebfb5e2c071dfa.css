@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 /*!
  * ImageHover.css - http://www.imagehover.io
  * Version 1.0
@@ -1438,7 +1441,7 @@
 
 .imghvr-zoom-out-flip-vert .flip-back {
     opacity: 0;
-    -webkit-transform: rotateY(90deg) translate(50%, 0) scale(. 5);
+    -webkit-transform: rotateY(90deg) translate(50%, 0) scale(.5);
     -moz-transform: rotateY(90deg) translate(50%, 0) scale(.5);
     -ms-transform: rotateY(90deg) translate(50%, 0) scale(.5);
     -o-transform: rotateY(90deg) translate(50%, 0) scale(.5);
@@ -6532,7 +6535,7 @@ textarea:focus {
     top: -6px
 }
 
-@keyframes "pulse2" {
+@keyframes pulse2 {
     0% {
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
@@ -6571,7 +6574,7 @@ textarea:focus {
     }
 }
 
-@-webkit-keyframes "pulse2" {
+@-webkit-keyframes pulse2 {
     0% {
         -webkit-transform: scale(1.1);
         transform: scale(1.1)
@@ -6586,7 +6589,7 @@ textarea:focus {
     }
 }
 
-@-ms-keyframes "pulse2" {
+@-ms-keyframes pulse2 {
     0% {
         -ms-transform: scale(1.1);
         transform: scale(1.1)
@@ -11747,7 +11750,6 @@ section.float-parallax-started .float-parallax {
     }
 }
 
-@charset "UTF-8";
 #start-resizable-editor-section {
     display: none
 }
@@ -22829,7 +22831,6 @@ form.submitting .wpcf7-spinner {
     direction: ltr
 }
 
-@charset "UTF-8";
 :root {
     --woocommerce: #a46497;
     --wc-green: #7ad03a;
@@ -23594,7 +23595,6 @@ form.submitting .wpcf7-spinner {
     float: left
 }
 
-@charset "UTF-8";
 :root {
     --woocommerce: #a46497;
     --wc-green: #7ad03a;
@@ -27049,7 +27049,6 @@ body:not(.search-results) .twentysixteen .entry-summary {
     text-decoration: underline
 }
 
-@charset "UTF-8";
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -38921,7 +38920,6 @@ fieldset:disabled .btn {
     content: "\e75f"
 }
 
-@charset "UTF-8";
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
@@ -57781,7 +57779,7 @@ input[type=number]::-webkit-outer-spin-button {
 #ship-to-different-address .checkbox {
     display: inline-block;
     font-weight: 500;
-    */
+    
 }
 
 #ship-to-different-address {
