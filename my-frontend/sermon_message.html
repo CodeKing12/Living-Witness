@@ -9,8 +9,8 @@
     <link media="only screen and (max-width: 768px)" href="../wp-content/cache/autoptimize/2/css/autoptimize_541e2ced151704f4ff1844c6de47ec02.css" rel="stylesheet" />
     <title>Global Warning and the End of the Age &#8211; Zegen</title>
     <meta name='robots' content='max-image-preview:large' />
-    <link rel="alternate" type="application/rss+xml" title="Zegen &raquo; Feed" href="../feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Zegen &raquo; Comments Feed" href="../comments/feed/index.html" />
+    <!--<link rel="alternate" type="application/rss+xml" title="Zegen &raquo; Feed" href="../feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Zegen &raquo; Comments Feed" href="../comments/feed/index.html" />-->
     <meta property="og:title" content="Global Warning and the End of the Age" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://elementor.zozothemes.com/zegen/sermon/global-warning-and-the-end-of-the-age/" />
@@ -1851,6 +1851,25 @@
         .zegen-header .header-inner .zegen-main-menu>li.menu-item-has-children>a:after, ul.dropdown-menu>li.menu-item-has-children>a:after {
             content: none;
         }
+
+        .play-audio {
+            width: 0;
+            display: block;
+            margin: -30px auto;
+            transition: ease 0.7s;
+        }
+
+        .da-audio {
+            width: 100%;
+            margin-bottom: 30px;
+            margin-top: -7px;
+        }
+
+        @media screen and (min-width: 700px) {
+            .da-audio {
+                width: 75%;
+            }
+        }
     </style>
     <link rel='stylesheet' id='elementor-post-17005-css' href='../wp-content/cache/autoptimize/2/css/autoptimize_single_2ef22ee3bf473f9d8d5a8d108bc6d800-ver=1626180938.css' type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-5527-css' href='../wp-content/cache/autoptimize/2/css/autoptimize_single_aa3b28eb76bea63fce860e27d6b0d87e-ver=1626349707.css' type='text/css' media='all' />
@@ -2089,7 +2108,19 @@
                                                                 <h4 class="sermon-subtitle">Watch Now</h4>
                                                                 <ul class="sermon-play-list">
                                                                     <li><a href="../wp-content/uploads/sites/2/2019/10/sample-video.mp4" class="popup-video-post" title="Video" download><i class="ti-control-play"></i></a></li>
-                                                                    <li><a href="../wp-content/uploads/sites/2/2019/10/sample-audio.mp3" class="popup-video-post" title="Audio" download><i class="ti-music"></i></a></li>
+                                                                    <li onclick="showAudio()">
+                                                                        <script>
+                                                                            function showAudio() {
+                                                                                var theaudio = document.getElementById('the-audio')
+                                                                                if (theaudio.classList.contains("da-audio")) {
+                                                                                    theaudio.classList.remove("da-audio")
+                                                                                } else {
+                                                                                    theaudio.classList.add("da-audio");
+                                                                                }
+                                                                            }
+                                                                        </script>
+                                                                        <a class="pop-down popup-video-post"><i class="ti-music"></i></a>
+                                                                    </li>
                                                                     <li><a href="../wp-content/uploads/sites/2/2019/10/sample-pdf.pdf" class="sermon-pdf-link-open" title="PDF" target="_blank"><i class="ti-book"></i></a></li>
                                                                 </ul>
                                                             </div>
@@ -2104,6 +2135,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <audio controls class="play-audio" id="the-audio">
+                                                        <source src="../wp-content/uploads/sites/2/2019/10/intro.mp3" type="audio/mpeg">
+                                                    </audio>
                                                     <h2 class="sermon-title">Global Warning and the End of the Age</h2>
                                                     <ul class="sermon-info">
                                                         <li><span class="title">Sermon By:</span> <a href="../sermon-preacher/jackson-west/index.html">Jackson West</a>, <a href="../sermon-preacher/jorge-malone/index.html">Jorge Malone</a></li>
